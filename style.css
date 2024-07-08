@@ -1,0 +1,221 @@
+body {
+/* Set background color and font family */
+background-color: #E3E7E8;
+font-family: system-ui;
+}
+
+/* Container Styles */
+
+.container {
+/* Set width and margin */
+width: 1000px;
+margin: auto;
+/* Add transition effect */
+transition: 0.5s;
+}
+
+/* Header Styles */
+
+header {
+/* Display as grid with two columns */
+display: grid;
+grid-template-columns: 1fr 50px;
+/* Add margin top */
+margin-top: 50px;
+}
+
+header .shopping {
+/* Position shopping cart icon relative to header */
+position: relative;
+/* Align text to right */
+text-align: right;
+}
+
+header .shopping img {
+/* Set width of shopping cart icon */
+width: 40px;
+}
+
+header .shopping span {
+/* Style shopping cart icon */
+background: blue;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+/* Position icon absolute */
+position: absolute;
+top: -5px;
+left: 80%;
+padding: 3px 10px;
+}
+
+/* List Styles */
+
+.list {
+/* Display as grid with three columns */
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+/* Add column and row gaps */
+column-gap: 20px;
+row-gap: 20px;
+/*Add margin top */
+margin-top: 50px;
+}
+
+.list .item {
+/* Style list item */
+text-align: center;
+background-color: #DCE0E1;
+padding: 20px;
+box-shadow: 0 50px 50px #757676;
+letter-spacing: 1px;
+}
+
+.list .item img {
+/* Set width and height of image */
+width: 90%;
+height: 430px;
+object-fit: cover;
+}
+
+.list .item .title {
+/* Style title */
+font-weight: 600;
+}
+
+.list .item .price {
+/* Add margin to price */
+margin: 10px;
+}
+
+.list .item button {
+/* Style button */
+background-color: #1C1F25;
+color: #fff;
+width: 100%;
+padding: 10px;
+}
+/* color selection */
+.color-options {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .color-options select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .color-options select option {
+    padding: 10px;
+  }
+  
+  .color-options select option:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+
+
+
+/* Card Styles */
+
+.card {
+/* Position card fixed */
+position: fixed;
+top: 0;
+left: 100%;
+/* Set width and height */
+width: 500px;
+height: 100vh;
+/*Add transition effect */
+transition: 0.5s;
+/*Set background color*/ 
+background-color: #453E3B;
+}
+
+.active .card {
+/* Change left position when active class is added */
+left: calc(100% - 500px);
+}
+
+.active .container {
+/* Translate container when active class is added */
+transform: translateX(-200px);
+}
+
+.card h1 {
+/* Style heading */
+color: #E8BC0E;
+font-weight: 100;
+margin: 0;
+padding: 0 20px;
+height: 80px;
+display: flex;
+align-items: center;
+}
+
+.card .checkOut {
+/* Position checkout buttons absolute */
+position: absolute;
+bottom: 0;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+/* Style checkout buttons */
+background-color: #E8BC0E;
+width: 100%;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+/* Style second checkout button */
+background-color: #1C1F25;
+color: #fff;
+}
+
+/* List Card Styles */
+
+.listCard li {
+/* Display list card items as grid */
+display: grid;
+grid-template-columns: 100px repeat(3, 1fr);
+color: #fff;
+row-gap: 10px;
+}
+
+.listCard li div {
+/* Style list card item div */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.listCard li img {
+/* Set width of image */
+width: 90%;
+}
+
+.listCard li button {
+/* Style button */
+background-color: #fff5;
+border: none;
+}
+
+.listCard .count {
+/* Add margin to count */
+margin: 0 10px;
+}
